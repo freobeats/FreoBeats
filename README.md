@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+Website is currently offline – in the meantime, check out my beats on beatstars.com/freo_beats/tracks or connect with me on Instagram @freo_beats!
+
 <!--
 **freobeats/FreoBeats** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
