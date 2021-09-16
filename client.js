@@ -153,7 +153,7 @@ function showCategory(category) {
 
     if (category=="melodic") {
         $("#beatsHeadline").replaceWith('<h2 id="beatsHeadline"> Melodic Trap </h2>');
-        $("#beatsText").replaceWith('<p id="beatsText"> Emotional trap beats inspired by melodic rappers such as Juice WRLD, Iann Dior, The Kid LAROI and Internet Money. Download the tagged version of any melodic trap beat for free from my <a class="hyperlink" href="https://www.beatstars.com/playlists/4747996" target="_blank"> BeatStars page</a>. </p>');
+        $("#beatsText").replaceWith('<p id="beatsText"> Emotional trap beats inspired by artists such as Juice WRLD, Iann Dior, The Kid LAROI and Internet Money. Download the tagged version of any melodic trap beat for free from my <a class="hyperlink" href="https://www.beatstars.com/playlists/4747996" target="_blank"> BeatStars page</a>. </p>');
         $("#tracklist").replaceWith('<iframe id="tracklist" src="https://player.beatstars.com/?storeId=121912" width="100%" height="800"> </iframe>');
     } else if (category=="drill") {
         $("#beatsHeadline").replaceWith('<h2 id="beatsHeadline"> Drill Beats </h2>');
