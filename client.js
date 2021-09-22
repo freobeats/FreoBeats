@@ -7,28 +7,6 @@ if (!online){
     $("#body").remove();
 }
 
-
-function toggleNav() {
-    var signedIn = sessionStorage.getItem('auth');
-    var isAdmin = false;
-
-    if (signedIn !== null) {
-        signedIn = sessionStorage.getItem('auth').length > 0;
-        isAdmin = JSON.parse(sessionStorage.getItem('auth')).user.isAdmin;
-    } else if (signedIn === null) {
-        signedIn = false;
-    }
-
-    $("#loggain, #loginpayment").toggleClass('d-none', signedIn);
-    $("#logoutButton, #myPage, #myPageDropdown, #checkoutBtn").toggleClass('d-none', !signedIn);
-
-    if (isAdmin) {
-        $(".myPage, #cart, #nyAdmin").toggleClass('d-none', isAdmin);
-    }
-    $("#adminPage, #nyAdmin").toggleClass('d-none', !isAdmin);
-    $("#cart").toggleClass('d-flex', !isAdmin);
-}
-
 function scrollTop() {
     $(this).scrollTop(0);
 }
@@ -106,6 +84,19 @@ function showFAQ() {
     }); */
 
     addAccordion();
+}
+
+function showLicenses() {
+    $(".container").html($("#view-licenses").html());
+    scrollTop();
+    $('body').css("background-image", bg_img);
+    
+    addAccordion();
+
+    $("#leaseInfo").tooltip({
+        'container': 'body',
+        'placement': 'bottom'
+    });
 }
 
 function addAccordion() {
@@ -199,8 +190,6 @@ $(document).ready(function () {
     $('.navbar-collapse').on('show.bs.collapse', function() { $('.navbar-brand').hide(); });
     $('.navbar-collapse').on('hidden.bs.collapse', function() { $('.navbar-brand').show(); });
 
-    toggleNav();
-
     $('#home').click(function (e) {
         e.preventDefault();
         showHome();
@@ -209,6 +198,15 @@ $(document).ready(function () {
     $('#contact').click(function (e) {
         e.preventDefault();
         showContact();
+
+        $('.beats-link').click(function (e) {
+            e.preventDefault();
+            showBeats();
+        });
+        $('.licenses-link').click(function (e) {
+            e.preventDefault();
+            showLicenses();
+        });
     });
 
     $('#socials').click(function (e) {
@@ -220,16 +218,7 @@ $(document).ready(function () {
 
     $('#licenses').click(function (e) {
         e.preventDefault();
-        $(".container").html($("#view-licenses").html());
-        scrollTop();
-        $('body').css("background-image", bg_img);
-        
-        addAccordion();
-
-        $("#leaseInfo").tooltip({
-            'container': 'body',
-            'placement': 'bottom'
-        });
+        showLicenses();
     });
 
     $('#services').click(function (e) {
