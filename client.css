@@ -49,6 +49,12 @@ h3 {
     }
 }
 
+@media (max-width: 767px) {
+    p {
+        font-size: small;
+    }
+}
+
 .hyperlink {
     color: rgb(200, 50, 50);
 }
@@ -153,7 +159,6 @@ body.modal-open {
 #tracklist {
     border: 1px solid rgb(20, 20, 20);
   /*  border-bottom: 5px solid rgb(200, 50, 50); */
-    margin-bottom: 80px;
 }
 
 #home {
@@ -280,16 +285,69 @@ footer {
     margin-top: 10px;
 }
 
+#bulkdeals {
+    color:rgb(200, 50, 50);
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#infoDiv {
+    text-decoration: underline;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#licensingInfo {
+    color: black;
+    font-size: small;
+}
+
+#credits {
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+#upm {
+    height: 80px;
+}
+
+#monkeys {
+    height: 80px;
+}
+
 #homeSocials {
-    color: rgb(20, 20, 20);
+  /*  color: rgb(20, 20, 20); */
     margin: auto;
     margin-bottom: 50px;
 }
 
+#connect {
+    background: rgb(20, 20, 20);
+    padding-top: 40px;
+    padding-bottom: 1px;
+}
+
+#connectH {
+    color: white;
+}
+
 .icon-home {
-    color: rgb(20, 20, 20);
+  /*  color: rgb(20, 20, 20); */
+    color: white;
     margin-right: 12px;
     margin-left: 12px;
+}
+
+#faq_home{
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+
+    max-width: 70%;
+    min-width: 400px;
+    font-size: large;
 }
 
 .card-img-top{
@@ -335,6 +393,14 @@ footer {
     body {
         background-size: 200%;
         background-position-x: center;
+    }
+
+    #faq_home { 
+        min-width: 0;
+        max-width: 100%;
+        width: 100%;
+
+        margin-top: 30px;
     }
 
 }
@@ -446,9 +512,9 @@ footer {
     width: 80px;
     height: 80px;
     border-radius: 50%;
- /*   border: 1px solid black; */
     margin-right: 20px;
     object-fit: cover;
+    object-position: 80% 0;
 }
 
 #socialsTag {
@@ -541,7 +607,6 @@ footer {
 #beatsText {
     margin-top: -20px;
     text-align: justify;
-    font-size: small;
 }
 
 #category-list {

@@ -15,6 +15,20 @@ function showHome() {
     $(".container").html($("#view-home").html());
     scrollTop();
     $('body').css("background-image", "url(images/berget/main.jpg)");
+
+    showFAQ();
+    $('.contact-link').click(function (e) {
+        e.preventDefault();
+        showContact();
+    });
+    $('.beats-link').click(function (e) {
+        e.preventDefault();
+        showBeats();
+    });
+    $('.licenses-link').click(function (e) {
+        e.preventDefault();
+        showLicenses();
+    });
 }
 
 function showThanks() {
