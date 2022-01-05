@@ -9,8 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../client.css">
-    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <link rel="stylesheet" href="../../client.css">
+    <link rel="icon" type="image/png" href="../../images/favicon.png" />
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,7 +25,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="../client.js"></script>
+    <script src="../../client.js"></script>
     <!-- <script src="https://js.stripe.com/v3/"></script> -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -60,16 +60,16 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <!--   <p class="d-none d-lg-block" id="navline"> | </p> -->
-                <a class="nav-item nav-link" id="beats" href="../beats/"> buy beats </a>
-                <a class="nav-item nav-link" id="licenses" href="../licenses/"> licenses </a>
-                <a class="nav-item nav-link" id="services" href="../services/"> services </a>
+                <a class="nav-item nav-link" id="beats" href="../../beats/"> buy beats </a>
+                <a class="nav-item nav-link" id="licenses" href="../../licenses/"> licenses </a>
+                <a class="nav-item nav-link" id="services" href="../../services/"> services </a>
 
 
             </div>
 
         </div>
 
-        <a class="navbar-brand" id="home" href="../">
+        <a class="navbar-brand" id="home" href="../../">
             <!--  <img id="logo" src="images/logos/logo_white.png">  -->
             freo beats
         </a>
@@ -77,88 +77,73 @@
         <div class="collapse navbar-collapse collapse2" id="navbarNavAltMarkup">
 
             <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link" id="about" href="../about/"> about </a>
-                <a class="nav-item nav-link" id="contact" href="../contact/"> contact </a>
-                <a class="nav-item nav-link" id="socials" href="../socials/"> socials </a>
+                <a class="nav-item nav-link" id="about" href="../../about/"> about </a>
+                <a class="nav-item nav-link" id="contact" href="../../contact/"> contact </a>
+                <a class="nav-item nav-link" id="socials" href="../../socials/"> socials </a>
             </div>
 
         </div>
 
     </nav>
 
+
     <!------- Container  --->
     <div class="container">
 
-        <div class="row">
+        <div id="beatsHeader">
+            <h2 id="beatsHeadline"> Drill Beats </h2>
+            <p id='beatsText'> Hard hitting drums and gliding 808's! Beats inspired by the UK and NY drill scenes. Download the tagged version of any drill beat for free from my <a class='hyperlink' href='https://www.beatstars.com/playlists/4708228' target='_blank'> BeatStars page</a>. </p>
+        </div>
 
-            <form id="contactForm" autocomplete="off">
-                <h1> Contact </h1>
+        <iframe id="tracklist" src="https://player.beatstars.com/?storeId=121905" width="100%" height="800"> </iframe>
+        <div id="infoDiv" class="row justify-content-center">
+            <a id="licensingInfo" class="hyperlink licenses-link" href="../../licenses/"> View licensing terms </a>
+        </div>
 
-                <div class="form-group">
-                    <input type="text" class="form-control" id="name" required>
-                    <label> Name </label>
+        <!-- CATEGORY CARDS -->
+        <div class="row justify-content-center" id="category-list">
+
+            <div class="row justify-content-center two-cat">
+
+                <div class="card category-card">
+                    <a href="../../beats/">
+                        <div class="card-body">
+                            <h5 class="card-title"> All Beats </h5>
+                        </div>
+                    </a>
                 </div>
 
-                <div class="form-group">
-                    <input type="text" class="form-control" id="subject" required>
-                    <label> Subject </label>
+                <div class="card category-card">
+                    <a href="../melodic/">
+                        <div class="card-body">
+                            <h5 class="card-title"> Melodic Trap </h5>
+                        </div>
+                    </a>
                 </div>
 
-                <div class="form-group">
-                    <textarea style="resize: none;" class="form-control" id="message" rows="4" required></textarea>
-                    <label> Message </label>
+            </div>
+
+            <div class="row justify-content-center two-cat">
+
+                <div class="card category-card">
+                    <a href="../dark/">
+                        <div class="card-body">
+                            <h5 class="card-title"> Dark Trap </h5>
+                        </div>
+                    </a>
                 </div>
 
-                <button class="btn btn-primary" id="question-submit" type="submit"> Send email </button>
-            </form>
+                <div class="card category-card">
+                    <a href="../chill/">
+                        <div class="card-body">
+                            <h5 class="card-title"> Chill Beats </h5>
+                        </div>
+                    </a>
+                </div>
 
-            <div id="faq_container">
-                <h1 id="faqHeader"> FAQs </h1>
-                <button class="accordion"> Are all beats free to use? </button>
-                <div class="panel">
-                    <p> All of my beats are free for non profit use only, so if you want to release a song with it you
-                        need a license. The free version is tagged. </p>
-                </div>
-                <button class="accordion"> Are the beats tagged when I purchase a license? </button>
-                <div class="panel">
-                    <p> No, all of my licenses come with an untagged high quality wav file. </p>
-                </div>
-                <button class="accordion"> Where can I download the beats? </button>
-                <div class="panel">
-                    <p> The tagged versions are available for free on this site and <a class="hyperlink"
-                            href="https://www.beatstars.com/freo_beats/" target="_blank">BeatStars</a>. Simply click the
-                        download icon next to "add to cart". </p>
-                </div>
-                <button class="accordion"> How do I purchase a license? </button>
-                <div class="panel">
-                    <p> You can go to my <a class="hyperlink" href="https://www.beatstars.com/freo_beats/"
-                            target="_blank">BeatStars page</a> or simply add the beat to cart under <a
-                            class="hyperlink beats-link" href="../beats/">BEATS</a> on this site. </p>
-                </div>
-                <button class="accordion"> Where do I find the licensing details? </button>
-                <div class="panel">
-                    <p> General licensing info is found under <a class="hyperlink licenses-link" href="../licenses/">LICENSES</a>.
-                        All of the details are available on <a class="hyperlink"
-                            href="https://www.beatstars.com/freo_beats/" target="_blank">BeatStars</a>, where you can
-                        see the contracts in full. </p>
-                </div>
-                <button class="accordion"> What if my track exceeds the amount of streams allowed for my lease?
-                </button>
-                <div class="panel">
-                    <p> You simply purchase a license with higher limits. If you have a Basic Lease and exceed the
-                        limitations, you will have to purchase a Track Out Lease, Unlimited or Exclusive License. </p>
-                </div>
             </div>
 
         </div>
-
-        <!-- THANK YOU -->
-        <script id="view-thanks" type="text/html">
-            <div id="thanksText">
-              <h2> Thank you! </h2>
-              <h3> Just press send in your email app – I'll keep in touch. </h3>
-            </div>
-          </script>
 
     </div>
 

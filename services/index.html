@@ -89,76 +89,109 @@
     <!------- Container  --->
     <div class="container">
 
-        <div class="row">
-
-            <form id="contactForm" autocomplete="off">
-                <h1> Contact </h1>
-
-                <div class="form-group">
-                    <input type="text" class="form-control" id="name" required>
-                    <label> Name </label>
-                </div>
-
-                <div class="form-group">
-                    <input type="text" class="form-control" id="subject" required>
-                    <label> Subject </label>
-                </div>
-
-                <div class="form-group">
-                    <textarea style="resize: none;" class="form-control" id="message" rows="4" required></textarea>
-                    <label> Message </label>
-                </div>
-
-                <button class="btn btn-primary" id="question-submit" type="submit"> Send email </button>
-            </form>
-
-            <div id="faq_container">
-                <h1 id="faqHeader"> FAQs </h1>
-                <button class="accordion"> Are all beats free to use? </button>
-                <div class="panel">
-                    <p> All of my beats are free for non profit use only, so if you want to release a song with it you
-                        need a license. The free version is tagged. </p>
-                </div>
-                <button class="accordion"> Are the beats tagged when I purchase a license? </button>
-                <div class="panel">
-                    <p> No, all of my licenses come with an untagged high quality wav file. </p>
-                </div>
-                <button class="accordion"> Where can I download the beats? </button>
-                <div class="panel">
-                    <p> The tagged versions are available for free on this site and <a class="hyperlink"
-                            href="https://www.beatstars.com/freo_beats/" target="_blank">BeatStars</a>. Simply click the
-                        download icon next to "add to cart". </p>
-                </div>
-                <button class="accordion"> How do I purchase a license? </button>
-                <div class="panel">
-                    <p> You can go to my <a class="hyperlink" href="https://www.beatstars.com/freo_beats/"
-                            target="_blank">BeatStars page</a> or simply add the beat to cart under <a
-                            class="hyperlink beats-link" href="../beats/">BEATS</a> on this site. </p>
-                </div>
-                <button class="accordion"> Where do I find the licensing details? </button>
-                <div class="panel">
-                    <p> General licensing info is found under <a class="hyperlink licenses-link" href="../licenses/">LICENSES</a>.
-                        All of the details are available on <a class="hyperlink"
-                            href="https://www.beatstars.com/freo_beats/" target="_blank">BeatStars</a>, where you can
-                        see the contracts in full. </p>
-                </div>
-                <button class="accordion"> What if my track exceeds the amount of streams allowed for my lease?
-                </button>
-                <div class="panel">
-                    <p> You simply purchase a license with higher limits. If you have a Basic Lease and exceed the
-                        limitations, you will have to purchase a Track Out Lease, Unlimited or Exclusive License. </p>
-                </div>
+        <!-- CUSTOM BEATS -->
+        <div class="service">
+            <div class="service-text">
+                <h2 style="text-align: left;"> Custom beats </h2>
+                <h2 id="line"> — </h2>
+                <p> There are sooo many beats out there, but sometimes you just can't find the right one.
+                    I strive to be a versatile producer and create different styles of music every week,
+                    which is why I'm able to offer you custom instrumentals! For the most part, I produce hip hop, trap,
+                    r&b and pop.
+                    Send me some reference songs and I'll make a completely original track in the same style for you.
+                    I'll work on it until we are both satisfied. Comes with an exclusive license!
+                    The price depends on the style and how much time is needed – hit me up to make a request and we'll
+                    figure something out!
+                </p>
+                <p class="service-price"> <a class="hyperlink contact-me" href="../contact/">Make a request</a> if interested </p>
             </div>
-
+            <img class="service-img" id="guitarImg" src="../images/frs_guitar.jpg">
         </div>
 
-        <!-- THANK YOU -->
-        <script id="view-thanks" type="text/html">
-            <div id="thanksText">
-              <h2> Thank you! </h2>
-              <h3> Just press send in your email app – I'll keep in touch. </h3>
+        <!-- MIXING & MASTERING -->
+        <div class="service">
+            <div class="service-text">
+                <h2 style="text-align: left;"> Mixing & mastering </h2>
+                <h2 id="line"> — </h2>
+                <p> A professional mix and master is essential to get your release the attention it deserves.
+                    The mixing and mastering stage can be frustrating and boring at the beginning, but is important to
+                    make your
+                    music
+                    sound like industry standards.
+                    Therefore, I've decided to offer mixing and mastering as a service for those who lack experience.
+                    I've been producing music for 8 years and I always mix and master my own work. Listen to my
+                    available beats for
+                    reference. </p>
+                <p class="service-price"> $25 – <a class="hyperlink contact-me" href="../contact/">contact me</a> if interested
+                </p>
             </div>
-          </script>
+            <img class="service-img" id="mixingImg" src="../images/frs2.jpg">
+        </div>
+
+        <!-- ONE-ON-ONE -->
+        <div class="service">
+            <div class="service-text">
+                <h2 style="text-align: left;"> One-on-one </h2>
+                <h2 id="line"> — </h2>
+                <p> Music production can be really hard when starting out, and you might feel like giving up from time
+                    to time.
+                    I've been there and I wanna help you by offering digital one-on-one lessons to help you grow as a
+                    musician.
+                    Regardless if you wanna learn more about basic music theory, sound choice, mixing or music
+                    production in Logic
+                    Pro,
+                    I'll do what I can to help you develop your skills and achive your goals. </p>
+                <p class="service-price"> $20 / hour – <a class="hyperlink contact-me" href="../contact/">contact me</a> if
+                    interested </p>
+            </div>
+            <img class="service-img" id="guitarImg" src="../images/frs_guitar.jpg">
+        </div>
+
+        <!-- ARTWORK -->
+        <div class="service">
+            <div class="service-text">
+                <h2 style="text-align: left;"> Artwork </h2>
+                <h2 id="line"> — </h2>
+                <p> In addition to sounding professional, your release has to look great!
+                    Eye-catching artwork helps your music stand out and arouse interest among potential listeners.
+                    I would love to create the artwork for your next song, beat or sample pack.
+                    Send me any images that you want me to use or let me freestyle based on the vibe of the music. </p>
+                <p class="service-price"> $10 – <a class="hyperlink contact-me" href="../contact/">contact me</a> if interested
+                </p>
+                &nbsp;
+            </div>
+            <!--   <div id="artCarousel" class="carousel" data-ride="carousel" data-interval="1500">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src='images/artwork/drown.jpg' class="d-block carousel-img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src='images/artwork/dystopia.jpg' class="d-block carousel-img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src='images/artwork/burn.jpg' class="d-block carousel-img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src='images/artwork/running.jpg' class="d-block carousel-img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src='images/artwork/lets go.jpg' class="d-block carousel-img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src='images/artwork/empty_alt.jpg' class="d-block carousel-img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src='images/artwork/run it back bw.jpg' class="d-block carousel-img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src='images/artwork/illusions.jpg' class="d-block carousel-img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src='images/artwork/elevate.jpg' class="d-block carousel-img" alt="...">
+          </div>
+        </div>
+      </div> -->
+        </div>
 
     </div>
 

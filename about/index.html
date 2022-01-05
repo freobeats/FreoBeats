@@ -25,7 +25,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="../client.js"></script>
+    <script src="client.js"></script>
     <!-- <script src="https://js.stripe.com/v3/"></script> -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -86,80 +86,48 @@
 
     </nav>
 
+
     <!------- Container  --->
     <div class="container">
 
-        <div class="row">
+        <img src="../images/berget/red_glasses.jpg" id="about-img">
+        <img id="sticker" src="../images/logos/sticker.png">
 
-            <form id="contactForm" autocomplete="off">
-                <h1> Contact </h1>
+        <div id="aboutText">
+            <h3 id="aboutHeader"> Who is Freo Beats? </h3>
+            <div id="aboutP">
 
-                <div class="form-group">
-                    <input type="text" class="form-control" id="name" required>
-                    <label> Name </label>
-                </div>
+                <p>
+                    Freo is a Swedish producer and beat maker influenced by a wide range of artists, from Pink Floyd to
+                    Travis Scott. In late 2021, he released his debut single as Freo Beats – a Christmas themed lofi track, 
+                    with a warm and nostalgic melody over beautiful piano chords and off beat drums.
+                </p>
 
-                <div class="form-group">
-                    <input type="text" class="form-control" id="subject" required>
-                    <label> Subject </label>
-                </div>
+                <p>
+                    He also recently engaged in a contract with Universal and 3Monkeys, participating with three tracks on a
+                    trap album distributed through Universal Production Music.
+                    Additionally, the young producer promotes and sells beats through BeatStars, where he has also been featured in
+                    official playlists.
+                </p>
 
-                <div class="form-group">
-                    <textarea style="resize: none;" class="form-control" id="message" rows="4" required></textarea>
-                    <label> Message </label>
-                </div>
+                <p>
+                    Freo's interest in music started at the age of 10, playing guitar in a band in school.
+                    He started recording his own covers on an iPad and as his interest developed, Freo moved on to EDM
+                    production in Logic Pro.
+                    He released and performed his own electronic music as Lewén, but now mostly produces instrumentals
+                    for other artists.
+                </p>
 
-                <button class="btn btn-primary" id="question-submit" type="submit"> Send email </button>
-            </form>
+                <p>
+                    In 2017, Freo went to Australia for a month to learn about production and recording as well as
+                    artistry from Brian 'Khamelion' Mitra at Fremantle Recording Studios.
+                    "The amount of inspiration I felt while following Brian in Fremantle was insane. It's something I'm
+                    always seeking and longing for".
+                    The name 'Freo' is a vernacular for Fremantle.
+                </p>
 
-            <div id="faq_container">
-                <h1 id="faqHeader"> FAQs </h1>
-                <button class="accordion"> Are all beats free to use? </button>
-                <div class="panel">
-                    <p> All of my beats are free for non profit use only, so if you want to release a song with it you
-                        need a license. The free version is tagged. </p>
-                </div>
-                <button class="accordion"> Are the beats tagged when I purchase a license? </button>
-                <div class="panel">
-                    <p> No, all of my licenses come with an untagged high quality wav file. </p>
-                </div>
-                <button class="accordion"> Where can I download the beats? </button>
-                <div class="panel">
-                    <p> The tagged versions are available for free on this site and <a class="hyperlink"
-                            href="https://www.beatstars.com/freo_beats/" target="_blank">BeatStars</a>. Simply click the
-                        download icon next to "add to cart". </p>
-                </div>
-                <button class="accordion"> How do I purchase a license? </button>
-                <div class="panel">
-                    <p> You can go to my <a class="hyperlink" href="https://www.beatstars.com/freo_beats/"
-                            target="_blank">BeatStars page</a> or simply add the beat to cart under <a
-                            class="hyperlink beats-link" href="../beats/">BEATS</a> on this site. </p>
-                </div>
-                <button class="accordion"> Where do I find the licensing details? </button>
-                <div class="panel">
-                    <p> General licensing info is found under <a class="hyperlink licenses-link" href="../licenses/">LICENSES</a>.
-                        All of the details are available on <a class="hyperlink"
-                            href="https://www.beatstars.com/freo_beats/" target="_blank">BeatStars</a>, where you can
-                        see the contracts in full. </p>
-                </div>
-                <button class="accordion"> What if my track exceeds the amount of streams allowed for my lease?
-                </button>
-                <div class="panel">
-                    <p> You simply purchase a license with higher limits. If you have a Basic Lease and exceed the
-                        limitations, you will have to purchase a Track Out Lease, Unlimited or Exclusive License. </p>
-                </div>
             </div>
-
         </div>
-
-        <!-- THANK YOU -->
-        <script id="view-thanks" type="text/html">
-            <div id="thanksText">
-              <h2> Thank you! </h2>
-              <h3> Just press send in your email app – I'll keep in touch. </h3>
-            </div>
-          </script>
-
     </div>
 
 
