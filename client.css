@@ -69,7 +69,6 @@ h3 {
     background: rgb(20, 20, 20);
   /*  border-bottom: 2px solid snow; */
 
-
     background-size: 1920px;
     color: white; 
     text-transform: uppercase;
@@ -116,6 +115,10 @@ h3 {
     height: 50px;
 }
 
+#body-home {
+    background-image: url(images/berget/main.jpg);
+}
+
 body {
 	background-color:snow;
 /*    background-attachment: fixed; */
@@ -130,6 +133,8 @@ body {
     margin: 0;
     min-height : calc(100vh - 67px - 107px);
 }
+
+
 
 body.modal-open {
     overflow: visible;
@@ -164,7 +169,13 @@ body.modal-open {
 #home {
     font-size: x-large;
     font-weight: bold;
-    margin: 1px 16px 0 0;;
+    margin: 6px 48px 0 0;
+}
+
+@media (max-width: 991px) {
+    #home {
+        margin-right: 12px;
+    } 
 }
 
 #navline {
@@ -173,7 +184,7 @@ body.modal-open {
     font-size: xx-large;
 }
 
-#contact, #products, #socials, #about, #licenses, #services {
+#contact, #beats, #socials, #about, #licenses, #services {
     margin-top: 8px;
     margin-right: 8px;
 }
@@ -520,6 +531,7 @@ footer {
 #socialsTag {
     margin-top: 25px;
     font-size: small;
+    font-weight: bold;
     color: black;
 }
 
