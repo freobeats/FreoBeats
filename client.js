@@ -79,22 +79,28 @@ $(document).ready(function () {
 
         var valid = true;
             if (submissionName === "") {
-                $("#name").css("border-color", "rgb(200, 50, 50)");
+                $("#name").css("border-bottom", "3px solid rgb(200, 50, 50)");
+                $("#name + label").css("color", "rgb(200, 50, 50)");
                 valid = false;
             } else {
-                $("#name").css("border-color", "rgb(20, 20, 20)");
+                $("#name").css("border-bottom", "2px solid rgb(20, 20, 20)");
+                $("#name + label").css("color", "rgb(20, 20, 20)");
             }
             if (submissionSubject === "") {
-                $("#subject").css("border-color", "rgb(200, 50, 50)");
+                $("#subject").css("border-bottom", "3px solid rgb(200, 50, 50)");
+                $("#subject + label").css("color", "rgb(200, 50, 50)");
                 valid = false;
             } else {
-                $("#subject").css("border-color", "rgb(20, 20, 20)");
+                $("#subject").css("border-bottom", "2px solid rgb(20, 20, 20)");
+                $("#subject + label").css("color", "rgb(20, 20, 20)");
             }
             if (submissionMessage === "") {
-                $("#message").css("border-color", "rgb(200, 50, 50)");
+                $("#message").css("border-bottom", "3px solid rgb(200, 50, 50)");
+                $("#message + label").css("color", "rgb(200, 50, 50)");
                 valid = false;
             } else {
-                $("#message").css("border-color", "rgb(20, 20, 20)");
+                $("#message").css("border-bottom", "2px solid rgb(20, 20, 20)");
+                $("#message + label").css("color", "rgb(20, 20, 20)");
             }
 
         if (valid) {

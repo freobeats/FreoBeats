@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <title> Freo Beats — Buy Beats and Instrumentals Online </title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,7 +10,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="client.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="images/favicon.png" />
 
   <!-- Font Awesome -->
@@ -42,8 +43,6 @@
 
 <body id="body-home">
 
-  <div id="background"> </div>
-
   <!------- Navbar -------->
   <nav class="navbar sticky-top navbar-expand-lg">
 
@@ -62,12 +61,9 @@
       <div class="navbar-nav">
         <!--   <p class="d-none d-lg-block" id="navline"> | </p> -->
         <a class="nav-item nav-link" id="beats" href="beats/"> buy beats </a>
-        <a class="nav-item nav-link" id="licenses" href="licenses/"> licenses </a>
+        <a class="nav-item nav-link" id="pricing" href="pricing/"> pricing </a>
         <a class="nav-item nav-link" id="services" href="services/"> services </a>
-
-
       </div>
-
     </div>
 
     <a class="navbar-brand" id="home" href="">
@@ -87,6 +83,7 @@
 
   </nav>
 
+  <div id="background"> </div>
 
   <!------- Container  --->
   <div class="container">
@@ -156,12 +153,18 @@
       </div>
     </div>
 
+    <!-- <div class="card" id="home-btn">
+      <a href="beats/">
+        <div class="card-body">
+          <h5 class="card-title"> Buy Beats </h5>
+        </div>
+      </a>
+    </div> -->
+
+
     <!-- RECENT YOUTUBE -->
-    <div id="recent">
-      <!--    <h1> Most recent upload </h1> -->
-
+    <div>
       <div class="row justify-content-center">
-
         <iframe id="ytHome" src="https://www.youtube.com/embed/videoseries?list=PLUi-ghVAnZgBcxJ0VQWynD8CGvHkE6BTT"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -222,25 +225,26 @@
       <h2> BUY 1, GET 1 FREE </h2>
       <h3 id="bulkdeals"> Bulk deals are now active!! </h3>
       <p>
-        Untagged wav is always included and all files are delivered instantly! Try using the search bar if you're
-        looking for specific genres, moods or type beats.
-        Download the tagged version of any beat for free from my <a class="hyperlink"
-          href="https://www.beatstars.com/freo_beats/tracks" target="_blank"> BeatStars page</a>.
+        A high quality untagged wav file is included with all licenses and all files are delivered instantly. 
+        Try using the search bar if you're looking for specific genres, moods or type beats.
+        Feel free to download the tagged version of any beat for free by clicking the download symbol next 
+        to 'add to cart'.
       </p>
     </div>
 
     <iframe id="tracklist" src="https://player.beatstars.com/?storeId=121890" width="100%" height="800"> </iframe>
 
     <div id="infoDiv" class="row justify-content-center">
-      <a id="licensingInfo" class="hyperlink licenses-link" href="licenses/"> View licensing terms </a>
+      <a id="licensingInfo" class="hyperlink" href="pricing/"> View pricing and licensing terms </a>
     </div>
 
     <div>
       <h2> Production credits </h2>
       <div id="credits">
         <div class="row justify-content-center">
-          <img src="images/upm.png" id="upm">
-          <img src="images/3mm.jpg" id="monkeys">
+          <img src="images/upm.png" class="credit">
+          <img src="images/3mm.jpg" class="credit">
+          <img src="images/bbc.png" class="credit" id="bbc">
         </div>
       </div>
     </div>
@@ -309,7 +313,7 @@
       </div>
       <button class="accordion"> Where do I find the licensing details? </button>
       <div class="panel">
-        <p> General licensing info is found under <a class="hyperlink licenses-link" href="licenses/">LICENSES</a>.
+        <p> General licensing info is found under <a class="hyperlink" href="pricing/">PRICING</a>.
           All of the details are available on <a class="hyperlink" href="https://www.beatstars.com/freo_beats/"
             target="_blank">BeatStars</a>, where you can see the contracts in full. </p>
       </div>
@@ -388,7 +392,7 @@
 
 
 
-  <!-- LISTEN -->
+  <!-- LISTEN
   <script id="view-listen" type="text/html">
 
     <div id="spotify">
@@ -398,18 +402,18 @@
 
   </script>
 
-  <!-- SOUND KITS PAGE-->
+   SOUND KITS PAGE
   <script id="view-sounds" type="text/html">
     <div id="beatsHeader">
       <h1 id="beatsHeadline"> Sound Kits </h1>
     </div>
 
-    <!-- List with sound kits -->
+     List with sound kits 
     <div class="row" id="soundkit-list"></div>
   
-    <!-- Add sample pack -->
-    <!-- ... -->
-  </script>
+    Add sample pack
+     ... 
+  </script> -->
 
 
   
